@@ -21,4 +21,7 @@ describe("leaves puntuation untouched", () => {
     it("returns elloHay orldWay ! for Hello World !", () => {
         expect(PigLatin("Hello World !")).toBe("elloHay orldWay !");
     });
+    it("returns elloHay orldWay!  elcomeWay ! for Hello World !  Welcome !", () => {
+        expect(PigLatin("Hello World !  Welcome !")).toBe("elloHay orldWay !  elcomeWay !");
+    });
 });
